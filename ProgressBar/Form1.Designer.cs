@@ -48,37 +48,44 @@
             // 
             this.btnRun.Location = new System.Drawing.Point(13, 68);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(192, 56);
+            this.btnRun.Size = new System.Drawing.Size(122, 74);
             this.btnRun.TabIndex = 1;
             this.btnRun.Text = "실행";
             this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.BtnRun_Click);
             // 
             // btnEnd
             // 
-            this.btnEnd.Location = new System.Drawing.Point(222, 68);
+            this.btnEnd.Location = new System.Drawing.Point(145, 68);
             this.btnEnd.Name = "btnEnd";
-            this.btnEnd.Size = new System.Drawing.Size(181, 23);
+            this.btnEnd.Size = new System.Drawing.Size(121, 74);
             this.btnEnd.TabIndex = 2;
             this.btnEnd.Text = "멈춤";
             this.btnEnd.UseVisualStyleBackColor = true;
+            this.btnEnd.Click += new System.EventHandler(this.BtnEnd_Click);
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(222, 101);
+            this.btnReset.Location = new System.Drawing.Point(282, 68);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(181, 23);
+            this.btnReset.Size = new System.Drawing.Size(121, 74);
             this.btnReset.TabIndex = 3;
             this.btnReset.Text = "리셋";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.BtnReset_Click);
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(13, 141);
+            this.lblStatus.Location = new System.Drawing.Point(12, 157);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(41, 12);
             this.lblStatus.TabIndex = 4;
             this.lblStatus.Text = "상태 : ";
+            // 
+            // Timer
+            // 
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // Form1
             // 
@@ -94,6 +101,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "상태진행";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
